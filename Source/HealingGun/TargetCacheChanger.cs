@@ -9,6 +9,7 @@ using Verse.AI;
 
 namespace HealingGun
 {
+    /*
     [StaticConstructorOnStartup]
     [HarmonyPatch(typeof(AttackTargetsCache))]
     [HarmonyPatch("GetPotentialTargetsFor")]
@@ -30,5 +31,5 @@ namespace HealingGun
                 result = th.Map.mapPawns.AllPawnsSpawned.Where((Pawn p) => !p.Dead && !p.Faction.HostileTo(pawn.Faction)).Cast<IAttackTarget>().ToList();
             }
         }
-    }
+    }*/
 }
