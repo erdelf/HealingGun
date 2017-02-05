@@ -1,13 +1,14 @@
 ﻿using System.Linq;
+using Verse;
 
-namespace Verse
+namespace HealingGun
 {
     public class DamageWorker_Heal : DamageWorker
 	{
 		public override float Apply(DamageInfo dinfo, Thing thing)
 		{
 			Pawn pawn = thing as Pawn;
-            if (pawn != null && pawn.Faction == RimWorld.Faction.OfPlayer)
+            if (pawn != null)
             {
             	Log.Message("Starting healing on " + pawn.NameStringShort);
             	//Log.Message("Analyzing Pawn");

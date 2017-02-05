@@ -67,7 +67,7 @@
   <ItemGroup>
     <Compile Include="DamageWorker_Heal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TargetCacheChanger.cs" />
+    <Compile Include="TargetChanger.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
