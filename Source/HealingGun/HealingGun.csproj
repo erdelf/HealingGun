@@ -42,10 +42,13 @@
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>..\..\Assemblies\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="0Harmony, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\erdelfion\Documents\modfiles\rimworld\0Harmony.dll</HintPath>
+      <HintPath>C:\Users\erdelfion\Documents\modfiles\rimworld\Harmony\Harmony\bin\Release\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
