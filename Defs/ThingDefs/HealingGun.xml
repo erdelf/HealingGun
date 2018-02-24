@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>Healing_Gun</defName>
         <label>Healing Gun</label>
@@ -31,10 +31,10 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <projectileDef>Bullet_Heal</projectileDef>
+                <defaultProjectile>Bullet_Heal</defaultProjectile>
                 <warmupTime>1</warmupTime>
                 <range>100</range>
-                <soundCast>ShotSniperRifle</soundCast>
+                <soundCast>Shot_SniperRifle</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>20</muzzleFlashScale>
             </li>
@@ -51,7 +51,7 @@
         <projectile>
             <flyOverhead>false</flyOverhead>
             <damageDef>HealGunHeal</damageDef>
-            <Speed>55</Speed>
+            <speed>55</speed>
         </projectile>
     </ThingDef>
 
@@ -151,4 +151,4 @@
       <shaderType>Transparent</shaderType>
     </graphicData>
   </ThingDef>
-</ThingDefs>
+</Defs>

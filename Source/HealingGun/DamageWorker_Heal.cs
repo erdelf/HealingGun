@@ -5,13 +5,12 @@ namespace HealingGun
 {
     public class DamageWorker_Heal : DamageWorker
 	{
-		public override float Apply(DamageInfo dinfo, Thing thing)
+        public override DamageResult Apply(DamageInfo dinfo, Thing victim)
 		{
-			Pawn pawn = thing as Pawn;
-            if (pawn != null)
+            if (victim is Pawn pawn)
             {
-            	Log.Message("Starting healing on " + pawn.NameStringShort);
-            	//Log.Message("Analyzing Pawn");
+                Log.Message("Starting healing on " + pawn.NameStringShort);
+                //Log.Message("Analyzing Pawn");
                 Log.Message("Injury Count: " + pawn.health.hediffSet.GetHediffs<Hediff_Injury>().Count());
                 /*
                 foreach (Hediff_Injury current in pawn.health.hediffSet.GetHediffs<Hediff_Injury>())
@@ -58,7 +57,7 @@ namespace HealingGun
 
                 Log.Message("Finished healing on " + pawn.NameStringShort);
             }
-            return 0f;
+            return DamageResult.MakeNew();
 		}
 	}
 }
