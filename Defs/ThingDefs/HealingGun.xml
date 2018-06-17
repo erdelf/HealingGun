@@ -17,6 +17,7 @@
             <AccuracyMedium>0.86</AccuracyMedium>
             <AccuracyLong>0.88</AccuracyLong>
             <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+            <Mass>1</Mass>
         </statBases>
         <recipeMaker>
             <researchPrerequisite>HealingGunResearch</researchPrerequisite>
@@ -24,7 +25,7 @@
         <costList>
             <Gun_SniperRifle>2</Gun_SniperRifle>
             <Steel>100</Steel>
-            <Component>6</Component>
+            <ComponentIndustrial>6</ComponentIndustrial>
         </costList>
         <techLevel>Spacer</techLevel>
         <verbs>
@@ -52,6 +53,7 @@
             <flyOverhead>false</flyOverhead>
             <damageDef>HealGunHeal</damageDef>
             <speed>55</speed>
+            <damageAmountBase>0</damageAmountBase>
         </projectile>
     </ThingDef>
 
