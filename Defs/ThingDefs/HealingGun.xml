@@ -53,7 +53,7 @@
             <flyOverhead>false</flyOverhead>
             <damageDef>HealGunHeal</damageDef>
             <speed>55</speed>
-            <damageAmountBase>0</damageAmountBase>
+            <damageAmountBase>1</damageAmountBase>
         </projectile>
     </ThingDef>
 </Defs>
